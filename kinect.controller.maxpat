@@ -29,6 +29,18 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-15",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 195.0, 30.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 30.0,
 					"frgb" : 0.0,
@@ -36,7 +48,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 840.0, 540.0, 360.0, 40.0 ],
+					"patching_rect" : [ 1365.0, 615.0, 360.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 435.0, 600.0, 390.0, 40.0 ],
 					"text" : "Kinect/Synapse Interface"
@@ -132,7 +144,7 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-15",
+					"id" : "obj-1",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -199,7 +211,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u624002297"
+					"varname" : "u170001828"
 				}
 
 			}
@@ -5383,7 +5395,7 @@
 					"patching_rect" : [ 315.0, 930.0, 100.0, 40.0 ],
 					"pattrstorage" : "Kinect",
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 600.0, 100.0, 40.0 ]
+					"presentation_rect" : [ 45.0, 600.0, 100.0, 40.0 ]
 				}
 
 			}
@@ -5701,6 +5713,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-174",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -6422,7 +6435,7 @@
 					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-1",
+					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -6434,7 +6447,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.6, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 0.6, 0.0, 1.0 ],
 					"id" : "obj-121",
 					"maxclass" : "panel",
 					"numinlets" : 1,
@@ -6744,7 +6757,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
-					"id" : "obj-10",
+					"id" : "obj-30",
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -6959,19 +6972,28 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1200.0, 720.0, 135.0, 210.000031 ],
-					"presentation_rect" : [ 1203.0, 717.0, 0.0, 0.0 ]
+					"patching_rect" : [ 1200.0, 720.0, 135.0, 210.000031 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 69.5, 864.5, 69.5, 864.5 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"destination" : [ "obj-163", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -7425,16 +7447,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 1824.5, 534.5, 1824.5, 534.5 ],
 					"source" : [ "obj-146", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 69.5, 864.5, 69.5, 864.5 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -10041,6 +10053,13 @@
 				"name" : "util.dynamicSend.maxpat",
 				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Darren",
 				"patcherrelativepath" : "../Darren",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Kinect.json",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Kinection",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
