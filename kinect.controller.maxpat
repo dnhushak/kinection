@@ -211,7 +211,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u170001828"
+					"varname" : "u730002252"
 				}
 
 			}
@@ -6447,7 +6447,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.6, 0.0, 1.0 ],
+					"bgcolor" : [ 0.6, 0.0, 0.0, 1.0 ],
 					"id" : "obj-121",
 					"maxclass" : "panel",
 					"numinlets" : 1,
