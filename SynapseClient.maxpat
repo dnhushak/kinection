@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 953.0, 66.0, 956.0, 880.0 ],
+		"rect" : [ 1127.0, 192.0, 1006.0, 880.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 450.0, 135.0, 195.0, 18.0 ],
+					"text" : "/lefthand_trackjointpos 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
@@ -133,7 +147,7 @@
 					"patching_rect" : [ 60.0, 375.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 15.0, 90.0, 20.0 ],
-					"text" : "9000",
+					"text" : "10000",
 					"varname" : "OSC_In_Port"
 				}
 
@@ -245,11 +259,10 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-107",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 180.0, 135.0, 105.0, 33.0 ],
+					"patching_rect" : [ 180.0, 135.0, 180.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 120.0, 75.0, 150.0, 20.0 ],
 					"text" : "Synapse Server IP"
@@ -303,7 +316,7 @@
 					"patching_rect" : [ 165.0, 165.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 75.0, 90.0, 20.0 ],
-					"text" : "localhost",
+					"text" : "10.0.1.52",
 					"varname" : "OSC_Out_IP"
 				}
 
@@ -371,7 +384,7 @@
 					"patching_rect" : [ 60.0, 165.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 45.0, 90.0, 20.0 ],
-					"text" : "8000",
+					"text" : "10001",
 					"varname" : "OSC_Out_Port"
 				}
 
@@ -440,6 +453,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
