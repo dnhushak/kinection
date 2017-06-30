@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
-			"architecture" : "x64"
+			"revision" : 10,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1127.0, 192.0, 1006.0, 880.0 ],
+		"rect" : [ 1718.0, 134.0, 1006.0, 880.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,27 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 165.0, 495.0, 97.0, 18.0 ],
+					"text" : "asdf"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-19",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 450.0, 135.0, 195.0, 18.0 ],
-					"text" : "/lefthand_trackjointpos 1"
+					"text" : "/righthand_trackjointpos 1"
 				}
 
 			}
@@ -147,7 +161,7 @@
 					"patching_rect" : [ 60.0, 375.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 15.0, 90.0, 20.0 ],
-					"text" : "10000",
+					"text" : "8001",
 					"varname" : "OSC_In_Port"
 				}
 
@@ -220,7 +234,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 225.0, 630.0, 150.0, 20.0 ],
-					"presentation_rect" : [ 221.0, 245.0, 0.0, 0.0 ],
 					"text" : "To Kinect Patch"
 				}
 
@@ -316,7 +329,7 @@
 					"patching_rect" : [ 165.0, 165.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 75.0, 90.0, 20.0 ],
-					"text" : "10.0.1.52",
+					"text" : "192.168.3.116",
 					"varname" : "OSC_Out_IP"
 				}
 
@@ -384,7 +397,7 @@
 					"patching_rect" : [ 60.0, 165.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 45.0, 90.0, 20.0 ],
-					"text" : "10001",
+					"text" : "8000",
 					"varname" : "OSC_Out_Port"
 				}
 
@@ -448,6 +461,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
